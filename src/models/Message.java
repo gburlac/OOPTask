@@ -1,6 +1,7 @@
 package models;
 
 public interface Message {
-    public String prepareMessage();
+   String prepareMessage();
+   String getBody ();
 }
 
