@@ -3,7 +3,7 @@ package models;
 public class XmlMessage implements Message {
     private  String body;
     public String prepareMessage(){
-        return " ";
+        return this.body += " prepared XMLmessage; ";
     }
 
     @Override

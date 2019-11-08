@@ -1,11 +1,11 @@
 package models;
 
-public class JsonMessage implements Message {
-
+public class MMS implements Message {
     private String body;
 
+    @Override
     public String prepareMessage() {
-        return body += " prepared JsonMessage; ";
+        return body += " prepared MMS message;";
     }
 
     @Override
@@ -13,7 +13,7 @@ public class JsonMessage implements Message {
         return body;
     }
 
-    public JsonMessage(String body) {
+    public MMS(String body) {
         this.body = body;
     }
 }

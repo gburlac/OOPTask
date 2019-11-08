@@ -1,11 +1,11 @@
 package models;
 
-public class JsonMessage implements Message {
-
+public class Viber implements Message {
     private String body;
 
+    @Override
     public String prepareMessage() {
-        return body += " prepared JsonMessage; ";
+        return body += " prepared Viber message; ";
     }
 
     @Override
@@ -13,7 +13,7 @@ public class JsonMessage implements Message {
         return body;
     }
 
-    public JsonMessage(String body) {
+    public Viber(String body) {
         this.body = body;
     }
 }
